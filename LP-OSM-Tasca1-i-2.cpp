@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Common.h"
 #include "Util.h"
+using namespace std;
 
 int main()
 {
@@ -89,7 +90,24 @@ int main()
 		que per definició, són nodes que no són nodes de camí que tenen un atribut name.
 	*/
 
-	// TODO Tasca1 
+	/* Tasca1 */
+	double longitud, latitud;
+	if (viejoRoble.id_element == "node") {
+		// En cas que sigui un node, recorrem els seus atributs
+		for (int i = 0; i < viejoRoble.atributs.size(); i++) {
+			// Iterem fins trobar el atribut que ens interessa
+			if (viejoRoble.atributs[i].first == "lat") {
+				latitud = stod(viejoRoble.atributs[i].second); // Nota: stod transforma un valor string a double.
+				cout << "Latitud: " << latitud << endl;
+			}
+			else if (viejoRoble.atributs[i].first == "lon") {
+				longitud = stod(viejoRoble.atributs[i].second);
+				cout << "Longitud: " << longitud << endl;
+			}
+		}
+	}
+
+
 
 	XmlElement camiJoaquim = {
 		// id_element = 
@@ -170,6 +188,50 @@ int main()
 	*/
 
 	// TODO Tasca2 
+	cout << "Tasca 2\n";
+	string id;
+	// Busquem els fills del tipus "nd"
+	for (int i = 0; i < camiJoaquim.fills.size(); i++)
+	{
+		if (camiJoaquim.fills[i].first == "nd")
+		{
+			// Imprimir el ID
+			// El ID está situat en un pair, dins d'una array de pairs, dins d'un array (???).
+			id = (camiJoaquim.fills[i].second[0].second); 
+			cout << "Node ID: " << id << endl;
+		}
+	}
+	// Buscar highways
+	// 1. Busquem els fills del tipus "tag"
+	for (int i = 0; i < camiJoaquim.fills.size(); i++)
+	{
+		if (camiJoaquim.fills[i].first == "tag")
+		{
+			// 2. Buscar dins de l'array el valor de "k", que ha de ser "highway"
+			int j = 0;
+			bool trobatK = false;
+			while (!trobatK && i < camiJoaquim.fills[i].second.size())
+			{
+				if (camiJoaquim.fills[i].second[j].first == "k" && camiJoaquim.fills[i].second[j].second == "highway")
+				{
+					trobatK = true;
+					// 3. Hem trobat una "highway", ara hem de buscar el valor de "v"
+					int i2 = 0;
+					bool trobatV = false;
+					while (!trobatV && i2 < camiJoaquim.fills[i].second.size())
+					{
+						if (camiJoaquim.fills[i].second[j].first == "v")
+						{
+							trobatV = true;
+							int valor = stoi(camiJoaquim.fills[i].second[j].first); // Nota: stoi transforma el valor de string a enter.
+							cout << "dssf: " << valor << endl;
+						}
+					}
+				}
+			}
+		}
+	}
+
 
 	return 0;
 
