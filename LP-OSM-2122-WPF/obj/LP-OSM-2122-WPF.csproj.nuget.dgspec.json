@@ -1,0 +1,88 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\user\\GitHub\\LP\\Projecte-LP\\LP-OSM-2122-WPF\\LP-OSM-2122-WPF.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\user\\GitHub\\LP\\Projecte-LP\\LP-OSM-2122-DLL\\LP-OSM-2122-DLL.vcxproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\user\\GitHub\\LP\\Projecte-LP\\LP-OSM-2122-DLL\\LP-OSM-2122-DLL.vcxproj",
+        "projectName": "LP-OSM-2122-DLL",
+        "projectPath": "C:\\Users\\user\\GitHub\\LP\\Projecte-LP\\LP-OSM-2122-DLL\\LP-OSM-2122-DLL.vcxproj"
+      },
+      "frameworks": {
+        "native": {}
+      }
+    },
+    "C:\\Users\\user\\GitHub\\LP\\Projecte-LP\\LP-OSM-2122-WPF\\LP-OSM-2122-WPF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\user\\GitHub\\LP\\Projecte-LP\\LP-OSM-2122-WPF\\LP-OSM-2122-WPF.csproj",
+        "projectName": "LP-OSM-2122-WPF",
+        "projectPath": "C:\\Users\\user\\GitHub\\LP\\Projecte-LP\\LP-OSM-2122-WPF\\LP-OSM-2122-WPF.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\GitHub\\LP\\Projecte-LP\\LP-OSM-2122-WPF\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\user\\GitHub\\LP\\Projecte-LP\\LP-OSM-2122-DLL\\LP-OSM-2122-DLL.vcxproj": {
+                "projectPath": "C:\\Users\\user\\GitHub\\LP\\Projecte-LP\\LP-OSM-2122-DLL\\LP-OSM-2122-DLL.vcxproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.Toolkit.Wpf.UI.Controls": {
+              "target": "Package",
+              "version": "[6.1.2, )"
+            },
+            "Microsoft.Windows.SDK.Contracts": {
+              "target": "Package",
+              "version": "[10.0.19041.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

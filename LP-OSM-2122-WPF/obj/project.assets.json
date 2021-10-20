@@ -1,0 +1,123 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "LP-OSM-2122-DLL/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/LP-OSM-2122-DLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LP-OSM-2122-DLL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LP-OSM-2122-DLL/1.0.0": {
+      "type": "project",
+      "path": "../LP-OSM-2122-DLL/LP-OSM-2122-DLL.vcxproj",
+      "msbuildProject": "../LP-OSM-2122-DLL/LP-OSM-2122-DLL.vcxproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "LP-OSM-2122-DLL >= 1.0.0",
+      "Microsoft.Toolkit.Wpf.UI.Controls >= 6.1.2",
+      "Microsoft.Windows.SDK.Contracts >= 10.0.19041.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\user\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\user\\GitHub\\LP\\Projecte-LP\\LP-OSM-2122-WPF\\LP-OSM-2122-WPF.csproj",
+      "projectName": "LP-OSM-2122-WPF",
+      "projectPath": "C:\\Users\\user\\GitHub\\LP\\Projecte-LP\\LP-OSM-2122-WPF\\LP-OSM-2122-WPF.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\GitHub\\LP\\Projecte-LP\\LP-OSM-2122-WPF\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\Users\\user\\GitHub\\LP\\Projecte-LP\\LP-OSM-2122-DLL\\LP-OSM-2122-DLL.vcxproj": {
+              "projectPath": "C:\\Users\\user\\GitHub\\LP\\Projecte-LP\\LP-OSM-2122-DLL\\LP-OSM-2122-DLL.vcxproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "dependencies": {
+          "Microsoft.Toolkit.Wpf.UI.Controls": {
+            "target": "Package",
+            "version": "[6.1.2, )"
+          },
+          "Microsoft.Windows.SDK.Contracts": {
+            "target": "Package",
+            "version": "[10.0.19041.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "No se encuentra el paquete Microsoft.Toolkit.Wpf.UI.Controls. No existe ningún paquete con este id. en los orígenes: Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.Toolkit.Wpf.UI.Controls",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "No se encuentra el paquete Microsoft.Windows.SDK.Contracts. No existe ningún paquete con este id. en los orígenes: Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.Windows.SDK.Contracts",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}

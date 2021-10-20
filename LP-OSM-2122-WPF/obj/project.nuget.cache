@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "lzP0z4KwBKVT8LrxhfosmrpRDVnQg+UETcffMgblNAigQ5PRCXl8lWoAlTC1XYwYK0FQnhvCoinHdFx2R3/JfA==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\user\\GitHub\\LP\\Projecte-LP\\LP-OSM-2122-WPF\\LP-OSM-2122-WPF.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "No se encuentra el paquete Microsoft.Toolkit.Wpf.UI.Controls. No existe ningún paquete con este id. en los orígenes: Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.Toolkit.Wpf.UI.Controls",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "No se encuentra el paquete Microsoft.Windows.SDK.Contracts. No existe ningún paquete con este id. en los orígenes: Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.Windows.SDK.Contracts",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}
